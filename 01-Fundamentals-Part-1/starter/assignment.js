@@ -134,17 +134,111 @@ minus the country's population)
 130. See the different results, and set the population back to original
 */
 
-let countryPopulation;
-if (countryPopulation > 33) {
-  console.log(`Portugal's population is above average`);
+// let countryPopulation;
+// if (countryPopulation > 33) {
+//   console.log(`Portugal's population is above average`);
+// } else {
+//   console.log(`Portugal's population is 22 million below average`);
+// }
+
+// countryPopulation = 13;
+// if (countryPopulation < 33) {
+//   console.log('test');
+// } else if (countryPopulation > 33) {
+//   countryPopulation = 130;
+//   console.log(`Portugal's population is above average`);
+// }
+
+/*
+LECTURE: Type Conversion and Coercion
+1. Predict the result of these 5 operations without executing them:
+'9' - '5'; = 4
+'19' - '13' + '17'; = 617
+'19' - '13' + 17; = 23
+'123' < 57;  false
+5 + 6 + '4' + 9 - 4 - 2;  144
+2. Execute the operations to check if you were right
+*/
+
+// console.log('9' - '5');
+// console.log('19' - '13' + '17');
+// console.log('19' - '13' + 17);
+// console.log('123' < 57);
+// console.log(5 + 6 + '4' + 9 - 4 - 2);
+
+//LECTURE: Equality Operators: == vs. ===
+// let numNeighbours = Number(
+//   prompt(`How many neighbour countries does your country
+// have?`)
+// );
+
+// if (numNeighbours == 1) {
+//   console.log('Only 1 border!');
+// } else if (numNeighbours > 1) {
+//   console.log('More than 1 border');
+// } else {
+//   console.log('No borders');
+// }
+
+// if (numNeighbours === 1) {
+//   console.log('Only 1 border!');
+// } else if (numNeighbours > 1) {
+//   console.log('More than 1 border');
+// } else {
+//   console.log('No borders');
+// }
+
+// === use to check if the data type is equal
+////////////////////////////////////
+///////////////////////
+//LECTURE: Logical Operators
+let speaksEnglish = true;
+let population = 40;
+let isIsland = false;
+
+const sarahCriteria = speaksEnglish && population < 50 && !isIsland;
+if (sarahCriteria) {
+  console.log('You should live in Portugal :)');
 } else {
-  console.log(`Portugal's population is 22 million below average`);
+  console.log('Portugal does not meet your criteria :(');
 }
 
-countryPopulation = 13;
-if (countryPopulation < 33) {
-  console.log('test');
-} else if (countryPopulation > 33) {
-  countryPopulation = 130;
+let language = 'hindi';
+switch (language) {
+  case 'chinese':
+  case 'mandarin':
+    console.log('MOST number of native speakers!');
+    break;
+
+  case 'spanish':
+    console.log('2nd place in number of native speakers');
+    break;
+  case 'english':
+    console.log('3rd place');
+    break;
+  case 'hindi':
+    console.log('5th most spoken language');
+    break;
+
+  default:
+    console.log('Great language too :D');
+    break;
+}
+
+//LECTURE: The Conditional (Ternary) Operator
+/*
+1 . If your country's population is greater than 33 million, use the ternary operator 
+to log a string like this to the console: 'Portugal's population is above average'. 
+Otherwise, simply log 'Portugal's population is below average'. Notice how only
+one word changes between these two sentences!
+2. After checking the result, change the population temporarily to 13 and then to 
+130. See the different results, and set the population back to original
+*/
+
+let myCountryPopulation = 13;
+
+if (myCountryPopulation > 33) {
   console.log(`Portugal's population is above average`);
+} else {
+  console.log(`Portugal's population is below average`);
 }
