@@ -192,38 +192,38 @@ LECTURE: Type Conversion and Coercion
 ////////////////////////////////////
 ///////////////////////
 //LECTURE: Logical Operators
-let speaksEnglish = true;
-let population = 40;
-let isIsland = false;
+// let speaksEnglish = true;
+// let population = 40;
+// let isIsland = false;
 
-const sarahCriteria = speaksEnglish && population < 50 && !isIsland;
-if (sarahCriteria) {
-  console.log('You should live in Portugal :)');
-} else {
-  console.log('Portugal does not meet your criteria :(');
-}
+// const sarahCriteria = speaksEnglish && population < 50 && !isIsland;
+// if (sarahCriteria) {
+//   console.log('You should live in Portugal :)');
+// } else {
+//   console.log('Portugal does not meet your criteria :(');
+// }
 
-let language = 'hindi';
-switch (language) {
-  case 'chinese':
-  case 'mandarin':
-    console.log('MOST number of native speakers!');
-    break;
+// let language = 'hindi';
+// switch (language) {
+//   case 'chinese':
+//   case 'mandarin':
+//     console.log('MOST number of native speakers!');
+//     break;
 
-  case 'spanish':
-    console.log('2nd place in number of native speakers');
-    break;
-  case 'english':
-    console.log('3rd place');
-    break;
-  case 'hindi':
-    console.log('5th most spoken language');
-    break;
+//   case 'spanish':
+//     console.log('2nd place in number of native speakers');
+//     break;
+//   case 'english':
+//     console.log('3rd place');
+//     break;
+//   case 'hindi':
+//     console.log('5th most spoken language');
+//     break;
 
-  default:
-    console.log('Great language too :D');
-    break;
-}
+//   default:
+//     console.log('Great language too :D');
+//     break;
+// }
 
 //LECTURE: The Conditional (Ternary) Operator
 /*
@@ -235,10 +235,36 @@ one word changes between these two sentences!
 130. See the different results, and set the population back to original
 */
 
-let myCountryPopulation = 13;
+// let myCountryPopulation = 13;
 
-if (myCountryPopulation > 33) {
-  console.log(`Portugal's population is above average`);
-} else {
-  console.log(`Portugal's population is below average`);
-}
+// if (myCountryPopulation > 33) {
+//   console.log(`Portugal's population is above average`);
+// } else {
+//   console.log(`Portugal's population is below average`);
+// }
+
+// const hasDriversLicense = false;
+// const hasGoodVision = true;
+
+// console.log(hasDriversLicense || hasGoodVision);
+
+
+
+// dolphinsScore = (96 + 108 + 89) /3;
+// // koalasScore= 88 + 91+ 110 / 3;
+// koalasScore= 916 + 108 + 89 /3;
+
+
+
+// console.log(dolphinsScore.toFixed(2));
+// console.log(koalasScore.toFixed(2));
+
+// if (dolphinsScore > koalasScore) {
+//     console.log(`Dolphin won with an average of ${dolphinsScore.toFixed(2)}`);
+// }
+// else if(dolphinsScore === koalasScore) {
+//     console.log('The score is draw!');
+// }
+// else{
+//     console.log(`Koala won with an average of ${koalasScore.toFixed(2)}`);
+// }
