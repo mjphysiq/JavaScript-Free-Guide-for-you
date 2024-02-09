@@ -268,3 +268,45 @@ one word changes between these two sentences!
 // else{
 //     console.log(`Koala won with an average of ${koalasScore.toFixed(2)}`);
 // }
+
+// const day = prompt()
+
+
+// if (day === "monday") {
+//     console.log('Today is monday');
+//     console.log('Go to your coding meetup!')
+// } 
+// else if(day === "tuesday") {
+//     console.log('Today is Tuesday')
+// } 
+// else if( day === "wednesday" ||  day === "thursday"){
+//     console.log('Write code examples');
+// } else if (day === "friday"){
+//     console.log('Today is friday');
+// } else if (day=== "saturday" || day === "sunday"){
+//     console.log("It's weekend");
+// }
+// else{
+//     console.log('Invalid input');
+// }
+    
+
+// const age = 18
+
+// const drink= age >= 18 ? 'allowed to drink' : 'you are underage';
+//  console.log(drink);
+
+/////TERTIARY OPERATOR IN CONDITION
+////ata 1
+
+const bill = 40;
+
+// const tip = bill >=50 && bill <=300 ? 
+// `The bill was ${bill}, the tip was ${bill * .15}, and the total value ${bill + bill * .15}` :
+// `The bill was ${bill}, the tip was ${bill * .20}, and the total value ${bill + bill * .2}`;
+// console.log( tip);
+
+const tip = bill >= 50 && bill <= 300 ? bill * .15 : bill * .2;
+
+
+console.log(`The bill was ${bill}, the tip was ${tip}, and the total value ${tip + bill}`);
